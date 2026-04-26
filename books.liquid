@@ -1,0 +1,15 @@
+---
+layout: layout.liquid
+title: All Books
+---
+
+<h1>All Books</h1>
+
+{% for book in books %}
+<article>
+  <h2>{{ book.title }}</h2>
+  <p><em>{{ book.author }}</em> · {{ book.genre }}</p>
+  <p>Rating: {{ book.rating }}/5</p>
+  <p>{{ book.review }}</p>
+</article>
+{% endfor %}
