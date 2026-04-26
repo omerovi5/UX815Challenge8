@@ -1,7 +1,18 @@
 ---
 layout: layout.liquid
-title: 11ty Boilerplate
+title: My Reading List
 ---
 
-<h1>Yet Another 11ty <strong>Boilerplate</strong></h1>
-<img alt="pine" src="/images/pine.png" width="50" />
+<h1>My Reading List</h1>
+<p>Books I've read and what I thought of them.</p>
+
+<ul>
+  {% for book in books limit:3 %}
+  <li>
+    <strong>{{ book.title }}</strong> by {{ book.author }}
+    — {{ book.rating }}/5 ⭐
+  </li>
+  {% endfor %}
+</ul>
+
+<a href="/books/">See all books →</a>

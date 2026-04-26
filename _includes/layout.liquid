@@ -1,22 +1,25 @@
----
-title: 11ty Boilerplate
----
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ title }}</title>
   <link rel="stylesheet" href="/styles/screen.css">
 </head>
 <body>
   <nav>
-    <ul>
-      <li><a href="/" title="Go home">Home</a></li>
-      <li><a href="/about/" title="About the boilerplate">About</a></li>
-    </ul>
+    <a href="/" class="nav-brand">
+      <img src="/images/logbook_icon.png" alt="Reading Log icon">
+      My Reading List
+    </a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/books/">All Books</a>
+      <a href="/about/">About</a>
+    </div>
   </nav>
+  <main>
     {{ content }}
+  </main>
 </body>
 </html>
