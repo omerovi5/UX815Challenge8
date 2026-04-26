@@ -3,5 +3,8 @@ layout: layout.liquid
 title: About
 ---
 
-# About the 11ty **Boilerplate**
-<img class="about" alt="pine" src="/images/pine.png" width="50" />
+# About This Site
+
+Just a place where I track books I've read and jot down my thoughts on them.
+
+![Reading Log icon](/images/logbook_icon.png)
